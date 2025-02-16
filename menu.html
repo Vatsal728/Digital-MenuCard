@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Menu Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.9);">
+        <div class="container">
+            <a class="navbar-brand" href="/" style="color: #ffd700; font-size: 24px;">Laxmi Food Inn</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="btn btn-outline-warning me-2">Back to Home</a></li>
+                <li><button onclick="viewCart()" class="btn btn-warning">View Cart</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center mb-4">
+            <div class="btn-group flex-wrap">
+                <button type="button" class="btn btn-warning category-filter active m-1" data-category="all">All</button>
+                <button type="button" class="btn btn-warning category-filter m-1" data-category="starters">Starters</button>
+                <button type="button" class="btn btn-warning category-filter m-1" data-category="main_courses">Main Courses</button>
+                <button type="button" class="btn btn-warning category-filter m-1" data-category="desserts">Desserts</button>
+                <button type="button" class="btn btn-warning category-filter m-1" data-category="beverages">Beverages</button>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+            <!-- Starters -->
+            <div class="col menu-item" data-category="starters">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" class="card-img-top" alt="Samosa">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Samosa</h5>
+                        <p class="card-text">Crispy pastry filled with spiced potatoes and peas</p>
+                        <p class="price text-warning">$4.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="starters">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a" class="card-img-top" alt="Spring Rolls">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Spring Rolls</h5>
+                        <p class="card-text">Crispy vegetable spring rolls served with sweet chili sauce</p>
+                        <p class="price text-warning">$6.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="main_courses">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1574484284002-952d92456975" class="card-img-top" alt="Butter Chicken">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Butter Chicken</h5>
+                        <p class="card-text">Tender chicken in rich tomato butter sauce</p>
+                        <p class="price text-warning">$15.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="main_courses">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe" class="card-img-top" alt="Paneer Tikka Masala">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Paneer Tikka Masala</h5>
+                        <p class="card-text">Grilled cottage cheese in spicy gravy</p>
+                        <p class="price text-warning">$14.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="main_courses">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1604023696489-ff450c049ecd" class="card-img-top" alt="Biryani">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Vegetable Biryani</h5>
+                        <p class="card-text">Fragrant rice with mixed vegetables and spices</p>
+                        <p class="price text-warning">$13.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="desserts">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307" class="card-img-top" alt="Gulab Jamun">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Gulab Jamun</h5>
+                        <p class="card-text">Sweet milk dumplings in rose syrup</p>
+                        <p class="price text-warning">$4.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="beverages">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" class="card-img-top" alt="Masala Chai">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Masala Chai</h5>
+                        <p class="card-text">Traditional Indian spiced tea</p>
+                        <p class="price text-warning">$2.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="beverages">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1596392301391-e8622b210bd4" class="card-img-top" alt="Mango Lassi">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Mango Lassi</h5>
+                        <p class="card-text">Sweet yogurt drink with mango pulp</p>
+                        <p class="price text-warning">$3.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col menu-item" data-category="desserts">
+                <div class="card h-100 shadow-lg border-warning">
+                    <img src="https://images.unsplash.com/photo-1615832494873-b0c52d519696" class="card-img-top" alt="Rasmalai">
+                    <div class="card-body bg-dark text-light">
+                        <h5 class="card-title text-warning">Rasmalai</h5>
+                        <p class="card-text">Soft cottage cheese dumplings in sweet milk</p>
+                        <p class="price text-warning">$5.99</p>
+                        <button class="btn btn-warning w-100 select-item">Select Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item Detail Modal -->
+    <div class="modal fade" id="itemModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light border-warning">
+                <div class="modal-header border-warning">
+                    <h5 class="modal-title text-warning"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" class="modal-image mb-3 img-fluid rounded" alt="">
+                    <p class="modal-description"></p>
+                    <p class="modal-price text-warning"></p>
+                    <button class="btn btn-warning add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-3" style="background-color: rgba(0, 0, 0, 0.9);">
+        <div class="container text-center">
+            <span class="text-warning">© 2024 Laxmi Food Inn</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

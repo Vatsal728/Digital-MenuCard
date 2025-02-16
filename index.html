@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Laxmi Food Inn - Fine Dining Experience</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Laxmi Food Inn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Experience Fine Dining</h1>
+                <p>Discover a world of exquisite flavors and exceptional service at Laxmi Food Inn.</p>
+                <div class="cta-buttons">
+                    <a href="menu.html" class="btn primary-btn">Explore Menu</a>
+                    <a href="#contact" class="btn secondary-btn">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Restaurant Interior" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p>Welcome to Laxmi Food Inn, where tradition meets innovation. Since 1990, we've been crafting unforgettable dining experiences with our blend of authentic flavors and modern culinary techniques.</p>
+                    <p>Our passionate team of chefs and staff are dedicated to providing you with not just a meal, but a journey through the finest cuisines, complemented by warm, attentive service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specialties py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Our Specialties</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&w=2077&auto=format&fit=crop" 
+                             alt="Specialty 1" class="img-fluid rounded mb-3">
+                        <h4>Authentic Flavors</h4>
+                        <p>Traditional recipes with a modern twist</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=1974&auto=format&fit=crop" 
+                             alt="Specialty 2" class="img-fluid rounded mb-3">
+                        <h4>Fresh Ingredients</h4>
+                        <p>Locally sourced, seasonal produce</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=2070&auto=format&fit=crop" 
+                             alt="Specialty 3" class="img-fluid rounded mb-3">
+                        <h4>Expert Chefs</h4>
+                        <p>Culinary masters at your service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2>Guest Experiences</h2>
+                    <p>What our valued guests say about their dining journey with us</p>
+                </div>
+                <div class="col-md-12">
+                    <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review-card">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" 
+                                         class="mx-auto d-block" alt="Customer 1">
+                                    <h5>John Doe</h5>
+                                    <div class="stars">★★★★★</div>
+                                    <p>"A truly exceptional dining experience. The attention to detail in every dish and the ambiance created an unforgettable evening."</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review-card">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop" 
+                                         class="mx-auto d-block" alt="Customer 2">
+                                    <h5>Jane Smith</h5>
+                                    <div class="stars">★★★★★</div>
+                                    <p>"The fusion of flavors and presentation of each dish was remarkable. The staff's knowledge and recommendations made our evening special."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center mt-5">
+                    <button class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                        Share Your Experience
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2>Get in Touch</h2>
+                    <p>Make a reservation or send us your inquiries</p>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn w-100">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-container rounded overflow-hidden shadow">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.623851452178!2d-74.00601538464594!3d40.71282267934987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f04806613%3A0x499e9125a6077b95!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1701103588362!5m2!1sen!2sus" 
+                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Share Your Experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="reviewForm">
+                        <div class="mb-4">
+                            <label for="reviewName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="reviewName" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="rating" class="form-label">Rating</label>
+                            <select class="form-control" id="rating" required>
+                                <option value="5">★★★★★</option>
+                                <option value="4">★★★★☆</option>
+                                <option value="3">★★★☆☆</option>
+                                <option value="2">★★☆☆☆</option>
+                                <option value="1">★☆☆☆☆</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="reviewText" class="form-label">Your Review</label>
+                            <textarea class="form-control" id="reviewText" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn w-100">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-1">Crafted with ♥ by Vatsal K Desai</p>
+            <p class="mb-0">&copy; Since 1990 - Laxmi Food Inn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
